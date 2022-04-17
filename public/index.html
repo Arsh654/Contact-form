@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS Starter</title>
+    <link rel="stylesheet" href="dist/styles.css" />
+  </head>
+  <body class="antialiased bg-gray-100">
+    <div class="flex w-full min-h-screen justify-center items-center">
+      <div
+        class="flex flex-col md:flex-row md:space-x-6 ms:space-y-0 space-y-6 bg-cyan-700 w-full max-w-4xl p-8 rounded-xl text-white"
+      >
+        <!-- 2 div one for contact infoa and 2nd for contact form -->
+        <div class="flex flex-col space-y-8 justify-between">
+          <!-- inside this div we'll have a 3 more div
+          1. Contact Me and it's brief
+        2. phone no , address and all
+      3. social links -->
+          <!-- this is 1 Div for contact me -->
+          <div>
+            <h1 class="font-bold text-4xl tracking-wide">Contact Us</h1>
+
+            <p class="pt-2 text-cyan-100 text-sm">
+              Lorem Ipsum darflo meicis lo urinSoid sii hamati
+            </p>
+          </div>
+          <!-- this is 2nd div for icons of call ,adress and all -->
+          <div class="flex flex-col space-y-6">
+            <div class="inline-flex space-x-2 items-center">
+              <ion-icon name="call" class="text-teal-300 text-xl"></ion-icon>
+              <span>(+123)-456789</span>
+            </div>
+            <div class="inline-flex space-x-2 items-center">
+              <ion-icon name="mail" class="text-teal-300 text-xl"></ion-icon>
+              <span>xyz@gmail.com</span>
+            </div>
+            <div class="inline-flex space-x-2 items-center">
+              <ion-icon
+                name="location"
+                class="text-teal-300 text-xl"
+              ></ion-icon>
+              <span>A-Block B-street C-Area </span>
+            </div>
+          </div>
+          <!-- this is 3rd div for social links -->
+          <div class="flex space-x-6 text-lg">
+            <a> <ion-icon name="logo-facebook"></ion-icon></a>
+            <a> <ion-icon name="logo-twitter"></ion-icon></a>
+            <a> <ion-icon name="logo-instagram"></ion-icon></a>
+            <a> <ion-icon name="logo-linkedin"></ion-icon></a>
+          </div>
+        </div>
+        <!-- contact form details logic to be put here -->
+        <div>
+          <div
+            class="bg-white rounded-xl shadow-lg p-8 text-gray-700 md:width-80"
+          >
+            <form action="" class="flex flex-col space-y-4">
+              <!-- Inside form we have 3 fields name, emailid, message so 2 div will be required -->
+              <div>
+                <label class="text-sm">Your Name</label>
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300"
+                />
+              </div>
+              <div>
+                <label class="text-sm">Email Address</label>
+                <input
+                  type="email"
+                  placeholder="Your Email Address"
+                  class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300"
+                />
+              </div>
+              <div>
+                <label class="text-sm">Message</label>
+                <textarea
+                  rows="4"
+                  type="text"
+                  placeholder="Message"
+                  class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300"
+                ></textarea>
+              </div>
+              <button
+                class="inline-block self-end bg-cyan-700 text-white font-bold rounded-lg px-6 py-2 uppercase text-sm"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
